@@ -1,0 +1,197 @@
+﻿ <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Reverend, studio, Simpsonville, software, programming">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NaN">
+    <meta name="author" content="Kevin Blackmon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="sn_reset.css" rel="stylesheet">
+    <link href="sn_mainstyles.css" rel="stylesheet">
+    <title>Syc Nature Park, LLC</title>
+</head>
+<body>
+
+    <header>
+        <h1>Syc Nature Park, LLC</h1>
+        <br>
+        <a id="header-phone" href="tel:8643370261">864-337-0261</a>
+        <br>
+        <a id="header-email" href="mailto:sycnaturepark@gmail.com">sycnaturepark@gmail.com</a>
+    </header>
+
+    <div id="services">
+        <div id="services-box">
+            <p><b>Syc Nature Park, LLC</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+            <form id="contact-form" action="https://formsubmit.co/sycnaturepark@gmail.com" method="POST">
+                <input name="name" type="text" class="form-input" id="name" placeholder="Name*" required><br>
+
+                <input name="email" type="email" class="form-input" id="email" placeholder="E-mail*" required><br>
+
+                <input name="phone" type="tel" class="form-input" id="phone" placeholder="Phone*" required><br>
+
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                <br>
+                <input name="submit" type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="gallery">
+
+        <h2 style="text-align:center">Slideshow Gallery</h2>
+        <div id="gallery-box">
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 20</div>
+                    <img src="IMG_2426.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 20</div>
+                    <img src="IMG_2428.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 20</div>
+                    <img src="IMG_2429.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 20</div>
+                    <img src="IMG_2430.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 20</div>
+                    <img src="IMG_6568.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 20</div>
+                    <img src="IMG_6596.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 20</div>
+                    <img src="IMG_6587.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 20</div>
+                    <img src="IMG_6581.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 20</div>
+                    <img src="IMG_6920.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 20</div>
+                    <img src="IMG_6616.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 20</div>
+                    <img src="IMG_6566.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 20</div>
+                    <img src="IMG_6615.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">13 / 20</div>
+                    <img src="IMG_6608.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">14 / 20</div>
+                    <img src="IMG_6611.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">15 / 20</div>
+                    <img src="IMG_6601.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">16 / 20</div>
+                    <img src="IMG_6600.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">17 / 20</div>
+                    <img src="IMG_6597.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">18 / 20</div>
+                    <img src="IMG_6595.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">19 / 20</div>
+                    <img src="IMG_6594.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">20 / 20</div>
+                    <img src="IMG_6593.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+    </div>
+
+    <footer>
+        Syc Nature Park, LLC
+        <br>
+        864-337-0261
+        <br>
+        sycnaturepark@gmail.com
+        <br>
+        &copy; 2023
+    </footer>
+
+</body>
+</html>
