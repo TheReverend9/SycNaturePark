@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Reverend, studio, Simpsonville, software, programming">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syc Nature Park, LLC. Syc Nature Campground Pics. Copyright © 2023 Syc Nature Park, LLC - All Rights Reserved. 864-337-0261. Contact Syc Nature Park.">
+    <meta name="author" content="Kevin Blackmon">
+    <link href="sn_reset.css" rel="stylesheet">
+    <link href="sn_mainstyles.css" rel="stylesheet">
+    <title>Syc Nature Park - Contact</title>
+<style>
+    header {
+        background-image: none;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 46px;
+        transform: none;
+    }
+
+    /*Contact Styles*/
+    #contact {
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+        margin-top: 20px;
+        justify-content: center;
+        color: rgb(245 245 245);
+    }
+
+    #contact-top {
+        font-family: 'Palatino Linotype';
+        font-size: 24px;
+    }
+
+    #contact-mid {
+        font-size: 26px;
+    }
+
+    #contact-name {
+        font-size: 26px;
+    }
+
+    #contact a {
+        text-decoration: none;
+        color: rgb(245 245 245);
+        font-size: 20px;
+        transition: .3s;
+    }
+
+    #contact a:hover {
+        color: rgb(150 150 150);
+    }
+
+    #form-button {
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+        margin-top: 20px;
+        justify-content: center;
+
+    }
+
+    #form-button button {
+        color: rgb(245 245 245);
+        background: transparent;
+        cursor: pointer;
+        font-family: 'Palatino Linotype';
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        justify-content: center;
+        border: 3px solid rgb(245 245 245);
+        border-radius: 30px;
+        transition: 1s;
+    }
+
+    #form-button button:hover {
+        border-color: transparent;
+        color: rgb(44 41 58);
+        background: rgb(245 245 245);
+    }
+
+    /*Services Styles*/
+    #services {
+        display: none;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px;
+        margin-top: 20px;
+        transform: translateY(-15px);
+        justify-content: center;
+    }
+
+    /*Form Styles*/
+    .form-input {
+        height: 40px;
+        width: 80%;
+        max-width: 800px;
+        padding: 5px;
+        margin: 5px;
+        background: transparent;
+        color: rgb(245 245 245);
+        font-size: 20px;
+        border: none;
+        border-bottom: 1px solid rgb(245 245 245);
+    }
+
+    ::placeholder {
+        color: rgb(245 245 245);
+    }
+
+    .form-input:focus, #message:focus {
+        background: rgb(54 51 68);
+        outline: none;
+    }
+
+    #message {
+        background: transparent;
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+        width: 80%;
+        max-width: 800px;
+        min-height: 100px;
+        resize: none;
+        border: none;
+        border-bottom: 1px solid rgb(245 245 245);
+        color: rgb(245 245 245);
+    }
+
+    #submit {
+        background: transparent;
+        color: rgb(245 245 245);
+        font-size: 24px;
+        border: 3px solid rgb(245 245 245);
+        border-radius: 30px;
+        padding: 10px 20px 10px 20px;
+        font-family: 'Palatino Linotype';
+        transition: .2s;
+    }
+
+    #submit:hover {
+        background-color: rgb(245 245 245);
+        color: rgb(44 41 58);
+    }
+
+    footer {
+    }
+
+</style>
+<script>
+    "use strict";
+
+    function showForm() {
+
+        var form_display = document.getElementById("services");
+        var form_button_display = document.getElementById("form-button");
+
+        if (form_display.style.display === "none") {
+            form_display.style.display = "block";
+            form_button_display.style.display = "none";
+        }
+        else {
+            form_display.style.display = "none";
+        }
+    }
+</script>
+
+</head>
+
+
+
+
+
+<body>
+    <nav>
+        <div id="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="syc_contact.html">- Contact Us -</a>
+            <a href="syc_gallery.html">Gallery</a>
+        </div>
+    </nav>
+    <div id="container">
+        <header>
+            <h1>Syc Nature Park, LLC</h1>
+        </header>
+
+        <div id="contact">
+            <div id="contact-box">
+                <p id="contact-top">Private campground, RV Park located in Cross Hill SC!</p>
+                <br>
+                <p id="contact-mid">Best way to catch us is by texting us @ 864-337-0261!</p>
+                <p id="contact-mid">We’re always working but we’ll get back to ya!</p>
+                <br>
+                <p id="contact-name">Syc Nature Park, LLC</p>
+                <br>
+                <a href="https://goo.gl/maps/5o17wuHU9gbbdV127">1409 Morse Landing Rd<br>Cross Hill<br>SC 29332</a>
+                <br>
+                <br>
+                <a id="contact-phone" href="tel:8643370261">864-337-0261</a>
+
+            </div>
+        </div>
+
+        <div id="form-button">
+            <button onclick="showForm()">Drop us a line!</button>
+        </div>
+
+        <div id="services" style="display:none;">
+            <div id="services-box">
+
+
+                <form id="contact-form" action="https://formsubmit.co/sycnaturepark@gmail.com" method="POST">
+
+                    <input name="name" type="text" class="form-input" placeholder="Name*" id="name" required><br>
+
+                    <input name="email" type="email" class="form-input" placeholder="E-mail*" id="email" required><br>
+
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                    <br>
+                    <input name="submit" type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright © 2023 Syc Nature Park, LLC - All Rights Reserved.
+        <br>
+        864-337-0261
+        <br>
+        <a href="syc_contact.html">Contact Syc Nature Park</a>
+    </footer>
+
+</body>
+</html>
